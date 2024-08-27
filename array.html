@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p>Linear search method:</p>
+    <p id="ans"></p>
+    <script>
+        function search(a,n,x)
+        {
+            for(i=0;i<n;i++)
+            if(a[i]==x)
+            return i;
+            return -1;
+        }
+            var x=0
+            var a=[23,98,56,78,34,67];
+            var n=a.length;
+            
+            var result=search(a,n,x);
+                    if(result==-1)
+                    document.getElementById("ans").innerHTML=x+" is not found"
+                    else
+                    document.getElementById("ans").innerHTML=x+" is found"
+        </script>
+</body>
+</html>
